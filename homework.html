@@ -291,12 +291,12 @@
                              <form>
                               <div class="mb-3">
                                 <label for="InputName1" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="InputName1" aria-describedby="emailHelp">
+                                <input name="name" type="text" class="form-control" id="InputName1" aria-describedby="emailHelp">
 
                               </div>
                               <div class="mb-3">
                                 <label for="InputEmail1" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="InputEmail1">
+                                <input name="email" type="email" class="form-control" id="InputEmail1">
                               </div>
 
                               <button type="submit" class="w-100 btn btn-lg btn-outline-primary">Submit</button>
@@ -354,6 +354,61 @@
 
       </div>
 </div>
+
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">№</th>
+      <th scope="col">Название товара</th>
+      <th scope="col">Цена за штуку</th>
+      <th scope="col">Количество</th>
+      <th scope="col">Итоговая сумма</th>
+      <th scope="col">Статус заказа</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Телефон</td>
+      <td>20000</td>
+      <td>10</td>
+      <td>200000</td>
+      <td>
+          <div class="alert alert-primary" role="alert">новый</div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Телевизор</td>
+      <td>50000</td>
+      <td>1</td>
+      <td>50000</td>
+      <td>
+          <div class="alert alert-warning" role="alert">обработка</div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Планшет</td>
+      <td>5000</td>
+      <td>100</td>
+      <td>500000</td>
+      <td>
+          <div class="alert alert-success" role="alert">обработан</div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Ноутбукт</td>
+      <td>100000</td>
+      <td>4</td>
+      <td>400000</td>
+      <td>
+          <div class="alert alert-danger" role="alert">отмена</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
         </main>
 
